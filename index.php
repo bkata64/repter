@@ -16,7 +16,7 @@
 		<nav>		
 			<div id="fomenu">
 				<div class="menupont">
-					<a class="nav-link" href="tarsasagok.html">
+					<a class="nav-link" href="tarsasagok.php">
 						<div class="menukep">
 							<img src="airplanes/green-airplane-icon.png" class="repcsi">
 							<p>Társaságok</p>

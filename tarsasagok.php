@@ -1,3 +1,7 @@
+<?php
+	include_once('php/Carriers.php');
+	$carriers = new Carriers();		
+?>
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -17,12 +21,15 @@
 
 	<div id="content">
 		<nav>
-			<a href="legi.html">Főoldal</a> > 
+			<a href="index.php">Főoldal</a> > 
 			<a href="#">Légitársaságok listája</a>
-		</nav>
-		<script>
-			lista();
-		</script>
+		</nav>		
+		<ul class="menu">
+			<? foreach($carriers->getCarriers() as $key => $carrier) {
+			?>
+			<li><a href="carrier.php?id=<?= $carrier['id']  ?>"><?=  $carrier['name'] ?></a></li>
+			<? } ?>
+		</ul>
 	</div>
 </body>
 </html>
