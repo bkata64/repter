@@ -1,0 +1,74 @@
+
+.alap {	
+	float: left;
+	font-size: 0.9em;
+	font-style: italic;
+	padding: 20px;
+}
+
+#kep {
+	width: 25%;
+}
+
+#cimkek {
+	width: 20%;
+}
+
+#adatok {
+	width: 40%;
+	text-align: center;
+}
+
+#kep img {
+	border: solid 2px #007335;
+	border-radius: 10px;
+	width: 80%;
+}
+
+.tabla {
+	width: 100%;
+	padding: 20px;	
+}
+
+.tabla td {
+	padding: 10px;	
+}
+
+.tabla td:first-child {
+	width: 200px;	
+}
+
+.elso {
+	background-color: #ccc;	
+	border: solid 2px #007335;
+	border-radius: 10px;
+	text-align: center;	
+	font-weight: bold;
+	font-size: 1.2em;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	padding: 0px;	
+}
+
+.szakma {
+	vertical-align: bottom;
+}
+
+.szakma p:first-child {
+	margin: 0;
+	font-weight: bold;
+}
+
+.szakma p:last-child {
+	margin: 0;
+	font-style: italic;
+}
+
+.tabla tr td:nth-child(3) {
+	font-style: italic;
+	vertical-align: bottom;	
+}
+
+.kiemel {
+	font-weight: bold;
+}
