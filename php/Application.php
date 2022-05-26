@@ -7,7 +7,7 @@ class Application {
         'servername' => 'localhost',
         'username' => 'root',
         'password' => 'Babesoft89',
-        'dbname' => 'airline2'
+        'dbname' => 'flight_stat'
     );
     private $connection;
     private $connectionLive = false;
@@ -30,13 +30,14 @@ class Application {
     
     protected function getResultList($sql) {
         $resultList = array();
-        $result = $this->connection->query($sql);        
+        $result = $this->connection->query($sql);              
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()) {
                 $resultList[] = $row;
             }
         }else {
             $this->writeLog('nem talált értéket a lekérdezés', $sql);
+            echo 'nem talált értéket a lekérdezés';
         }
         return $resultList;
     }

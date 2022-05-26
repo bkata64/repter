@@ -32,13 +32,13 @@ $rekord = $carriers->getCarrierById(intval($_GET['id']));
             <p style="font-weight:bold">Az összes járat:<p>
             <p id="osszjarat"><?= $carriers->getSumJarat(intval($_GET['id']))['osszesJarat']; ?></p>
             <p style="font-weight:bold">A látogatott repterek száma:</p>
-            <p id="repterei">34</p>
+            <p id="repterei"><?= $carriers->getCountAirport(intval($_GET['id']))['latogatottRepterekSzama']; ?></p>
             <p style="font-weight:bold">A törölt járatok aránya:</p>
-            <p id="torolt">2%</p>
+            <p id="torolt"><?= $carriers->getCancelledJarat(intval($_GET['id']))['cancelledArr']; ?>%</p>
             <p style="font-weight:bold">Az átlagos járat késés:</p>
-            <p id="keses">2345</p>
+            <p id="keses"><?= $carriers->getAvgDelay(intval($_GET['id']))['avgDelay']; ?></p>
             <p style="font-weight:bold">A legforgalmasabb reptér:</p>
-            <p id="legforgalmasabb">ATL</p>
+            <p id="legforgalmasabb"><?= $carriers->getForgalmasAir(intval($_GET['id']))['code']; ?></p>
         </div>
 	</div>
 </body>
